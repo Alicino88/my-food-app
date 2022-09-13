@@ -1,0 +1,18 @@
+button {
+  background-color: #6d435a;
+  padding: 1.3rem;
+  border: none;
+  color: #fffcf9;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.amount {
+  background-color: #ff6978;
+  padding: 0.8rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
