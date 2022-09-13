@@ -1,7 +1,12 @@
 import "./App.css";
+import Nav from "./Components/Layout/Nav";
 
 function App() {
-  return <main className="App">Food order app</main>;
+  return (
+    <>
+      <Nav />
+    </>
+  );
 }
 
 export default App;
