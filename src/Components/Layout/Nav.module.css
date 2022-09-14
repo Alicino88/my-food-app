@@ -6,12 +6,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 }
 
 .container {
-  width: 120rem;
+  width: 80rem;
   max-width: 120rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 5rem;
 }
