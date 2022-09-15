@@ -1,0 +1,33 @@
+form {
+  text-align: right;
+}
+
+.amount-container {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.amount-container label {
+  font-weight: bold;
+  color: #6d435a;
+}
+.amount-container input {
+  width: 3rem;
+  height: 2rem;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #6d435a;
+  font: inherit;
+}
+
+form button {
+  padding: 0.5rem 1.5rem;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #b46a93;
+  border-color: #b46a93;
+}
