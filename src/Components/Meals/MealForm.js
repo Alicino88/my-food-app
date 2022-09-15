@@ -4,8 +4,8 @@ function MealForm(props) {
   return (
     <form className={styles.form}>
       <div className={styles["amount-container"]}>
-        <label htmlFor="amount">Amount</label>
-        <input type="number" id="amount" defaultValue="0" />
+        <label htmlFor={props.id}>Amount</label>
+        <input type="number" id={props.id} defaultValue="0" />
       </div>
       <button>Add</button>
     </form>
