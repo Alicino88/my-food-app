@@ -6,8 +6,7 @@ const Backdrop = (props) => {
 const ModalOverlay = (props) => {
   return (
     <div className={classes.modal}>
-      <div className={classes.content}>test modal</div>
-      <button onClick={props.onHideModal}>Close</button>
+      <div className={classes.content}>{props.children}</div>
     </div>
   );
 };
@@ -16,7 +15,9 @@ function Modal(props) {
   return (
     <>
       <Backdrop onHideModal={props.onHideModal} />
-      <ModalOverlay onHideModal={props.onHideModal} />
+      <ModalOverlay onHideModal={props.onHideModal}>
+        {props.children}
+      </ModalOverlay>
     </>
   );
 }
