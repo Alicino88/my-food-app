@@ -6,6 +6,7 @@ import CartContext from "../../Store/cart-context";
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
   const amount = `€${cartCtx.totalAmount}`;
+  const hasItems = cartCtx.items.length > 0;
 
   const cartItems = (
     <ul className={classes["cart-items"]}>
@@ -26,7 +27,7 @@ const Cart = (props) => {
         <button className={classes["button--alt"]} onClick={props.onHideModal}>
           Close
         </button>
-        <button className={classes.button}>Order</button>
+        {hasItems && <button className={classes.button}>Order</button>}
       </div>
     </Modal>
   );
