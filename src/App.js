@@ -2,7 +2,7 @@ import "./App.css";
 import Nav from "./Components/Layout/Nav";
 import Header from "./Components/Layout/Header";
 import AvailableMeals from "./Components/Meals/AvailableMeals";
-import Modal from "./Components/UI/Modal";
+import Cart from "./Components/Cart/Cart";
 import { useState } from "react";
 import CartProvider from "./Store/CartProvider";
 
@@ -18,7 +18,7 @@ function App() {
   };
   return (
     <CartProvider>
-      {modalIsVisible && <Modal onHideModal={hideModal} />}
+      {modalIsVisible && <Cart onHideModal={hideModal} />}
       <Nav onShowModal={showModal} />
       <Header />
       <AvailableMeals />
