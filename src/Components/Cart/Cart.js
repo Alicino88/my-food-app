@@ -9,7 +9,10 @@ const Cart = (props) => {
   const amount = `€${cartCtx.totalAmount}`;
   const hasItems = cartCtx.items.length > 0;
 
-  const addItem = (item) => {};
+  const addItem = (item) => {
+    console.log(item);
+    cartCtx.addItem({ ...item, amount: 1 });
+  };
 
   const removeItem = (id) => {};
 
