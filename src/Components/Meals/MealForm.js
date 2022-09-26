@@ -10,7 +10,6 @@ function MealForm(props) {
 
     const enteredAmount = amountInputRef.current.value;
     const enteredAmountNumber = +enteredAmount;
-    //console.log(enteredAmount);
 
     if (
       enteredAmount.trim().length === 0 ||
@@ -18,7 +17,8 @@ function MealForm(props) {
       enteredAmountNumber > 5
     ) {
       setAmountIsValid(false);
-      return;
+    } else {
+      setAmountIsValid(true);
     }
     props.onAddToCart(enteredAmountNumber);
   };
@@ -34,7 +34,11 @@ function MealForm(props) {
         />
       </div>
       <button>Add</button>
-      {!amountIsValid && <p>Please enter a valid amount</p>}
+      {!amountIsValid && (
+        <p className={styles.error}>
+          Please enter a valid amount between 1 and 5
+        </p>
+      )}
     </form>
   );
 }
