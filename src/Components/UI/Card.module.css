@@ -3,3 +3,9 @@
   border-radius: 14px;
   background-color: #f2e7f8;
 }
+
+@media (max-width: 700px) {
+  .card {
+    border-radius: 0px;
+  }
+}
