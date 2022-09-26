@@ -10,7 +10,7 @@ const Cart = (props) => {
   const hasItems = cartCtx.items.length > 0;
 
   const addItem = (item) => {
-    console.log(item);
+    //console.log(item);
     cartCtx.addItem({ ...item, amount: 1 });
   };
 
