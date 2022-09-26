@@ -3,9 +3,7 @@ form {
 }
 
 .amount-container {
-  display: flex;
   margin-bottom: 1rem;
-  align-items: center;
 }
 
 .amount-container label {
@@ -30,4 +28,9 @@ form button {
 .form button:active {
   background-color: #b46a93;
   border-color: #b46a93;
+}
+
+.error {
+  margin-top: 1rem;
+  color: #ff6978;
 }
